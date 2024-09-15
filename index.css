@@ -1,0 +1,80 @@
+/* General body styles */
+body {
+    /* background-color: bisque; */
+    height: 100vh;
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: Arial, sans-serif; */
+}
+
+/* Display box styling */
+#display_box {
+    height: 100vh;
+    width: 75%;
+    text-shadow: 1px -1px 1px green;
+    background-color: orange;
+    /* padding: 20px; */
+    text-align:center;
+}
+
+
+/* Social link box styling */
+#social_link_box {
+    height: 100vh;
+    width: 25%;
+    text-shadow: 1px -1px 1px green;
+    background-color: rgb(75, 186, 246);
+    border: 2px solid gray;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#social_link_box a {
+    padding: 5px;
+    margin: 10px;
+}
+
+#social_link_box a:hover {
+    color: rgb(71, 11, 234);
+    transform: scale(2);
+    transition-duration: 0.8s;
+}
+
+/* Section styling */
+#education,
+#skills,
+#acadamics {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* List styling in sections */
+#education ul,
+#skills ul,
+#acadamics ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+#education li,
+#skills li,
+#acadamics li {
+    margin: 10px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .screen_size {
+        flex-direction: column;
+    }
+
+    #option_box, #social_link_box {
+        height: auto;
+    }
+}
